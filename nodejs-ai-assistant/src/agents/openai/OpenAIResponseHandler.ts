@@ -251,10 +251,7 @@ export class OpenAIResponseHandler {
 
       return JSON.stringify(data);
     } catch (error) {
-      console.error(
-        `An exception occurred during web search for "${query}":`,
-        error
-      );
+      console.error(`An exception occurred during web search for "${query}":`, error);
       return JSON.stringify({
         error: "An exception occurred during the search.",
         message: error instanceof Error ? error.message : "Unknown error",
