@@ -215,7 +215,7 @@ export class OpenAIResponseHandler {
 
     if (!TAVILY_API_KEY) {
       return JSON.stringify({
-        error: "Web search is not available. API key not configured.",
+        error: "Web search is not available. API key is not configured well.",
       });
     }
 
