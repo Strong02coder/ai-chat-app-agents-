@@ -123,7 +123,7 @@ export class OpenAIResponseHandler {
       return;
     }
 
-    console.log("Stop generating for message", this.message.id);
+    console.log("Stop generating message", this.message.id);
     if (!this.openai || !this.openAiThread || !this.run_id) {
       return;
     }
